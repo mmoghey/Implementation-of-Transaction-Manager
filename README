@@ -1,0 +1,91 @@
+
+
+DETAILED DESCRIPTION OF IMPLEMENTATION
+1. transx_manager::BeginTx 
+	This function will create a structure containing the parameters to be passed to beginTx().
+	this also sets the count to 0 so that lock manager will handle it properly.
+	Then create a new thread to handle creation where it calls begintx and pass the structure created as parameter
+
+2. transx_manager::TxRead
+	This function will create a structure containing the parameters to be passed to readTx().
+	this will also keep decreasing the count everytime its being called so that lock manager can execute
+	operations performed by threads of same transaction sequentially.
+	Then create a new thread to handle creation where it calls readtx and pass the structure created as parameter
+
+3 transx_manager::TxWrite
+	This function will create a structure containing the parameters to be passed to writetx()
+	this will also keep decreasing the count everytime its being called so that lock manager can execute
+	operations performed by threads of same transaction sequentially.
+	Then create a new thread to handle creation where it calls readtx and pass the structure created as parameter
+
+4 transx_manager::Committx
+	This function will create a structure containing the parameters to be passed to committx()
+	this will also keep decreasing the count everytime its being called so that lock manager can execute
+	operations performed by threads of same transaction sequentially.
+	Then create a new thread to handle creation where it calls committx and pass the structure created as parameter
+
+5 transx_manager::Aborttx
+	This function will create a structure containing the parameters to be passed to aborttx()
+	this will also keep decreasing the count everytime its being called so that lock manager can execute
+	operations performed by threads of same transaction sequentially.
+	Then create a new thread to handle creation where it calls aborttx and pass the structure created as parameter
+
+
+6. begintx
+	This function will acquire lock on the transaction by using start_operation create a new transx object and add it 
+	to the list of transaction (active) maintained by transx_manager after acquiring lock on transaction manager. It then releases        both the locks.
+
+7,8. readtx, writetx
+	Both these functions acquire lock on transaction by calling start_operation, they then check if the transaction 
+	being read/written is already present in transaction manager list. If not then it ignores the transaction. If its present then
+	it checks if some other process has not aborted this transaction. If not then it calls set_lock which handles read/write after
+	insuring 2-phase locking protocol. After this it releases all the locks acquired for the process.
+
+9 transx::set_lock
+	This function is responsible for 2-phase locking. Here we check if the transaction is the owner of object which is requested
+	to be modified. If not, then it checks who is the owner of the process. If the owner has the starttime less than the current 
+	transaction, then we can wait. If not, then we abort the owner of this transaction. (This is performed 
+	by transx_deadlock::deadlock() ). 
+	if current process is the owner of the transaction then we can continue and call performReadWrite to perform read/write based 		on operation called.
+ 
+	********************* important ************************************************
+	Since currently in this peroject's given code perform_readwrite() is modifying the value of object 
+	even for read operation ('S' lock mode) hence we did not distinguish this function for 
+	'S' and 'X' lock mode. If, read was not modifying the objects value then set_lock would 
+	allow two 'S' transactions together while blcoking the writes. Still, we are implementing 
+	this effect here by not aborting if the transaction is demanding a shared lock when we do 
+	wound wait( instead we ask it to wait). 
+	We only abort when we are requesting 'X' lock.
+
+10 aborttx(), 
+11 committx ()
+12 do_commit_abort():
+	These functions (aborttx(), committx()) get the lock on the process and then call do_commit_abort() where we
+	perform actual commit or abort. Here we  check if there are transactions waiting for this semaphore and if yes 
+	then release the semaphores. We also call free_locks() and remove_tx() to free the locks held by this transaction 
+	and remove the transaction from the list of transactions active maintained by tx manager.
+
+13  wait_for::deadlock()
+	This method calls traverse() to check if we have traversed this transaction before. If yes then it checks if we have
+	a cycle and if yes then we choose the victim and abort it. the steps followed to abort is same as done by do_commit_abort.
+
+14. wait_for::traverse()
+15. wait_for::choose_victim()
+	This method figures out if we will have a cycle and hence deadlock. If yes then it calls choose_victim to get the 
+	victim transaction to be aborted. Here it  check all the nodes which are in the hash_table to see if  we have 
+	already visited those nodes. if yes, then we have a deadlock. If we have current node node waiting for other nodes which are
+	in turn waiting for this node then we have a cycle. If yes then calls choose_victim(). The choose_victim() method checks if
+	any one transaction is waiting for 'X' lock. If yes then based on the time the transactions were begin, it chooses a victim.
+	for wait-wound, if an older transaction if requesting a lock then it kills the yound transaction and if a young transaction 	      is waiting for a lock then it waits until locks are granted. The traverse() method recursively calls itself to form a graph.
+
+
+STEPS TO RUN:
+	from src/ call:
+	./test ../test_cases/T0.txt
+	./test ../test_cases/T1.txt
+	./test ../test_cases/deadlock.txt
+
+OUTPUT FILES:
+	T0.log
+	T1.log
+	deadlock.log	

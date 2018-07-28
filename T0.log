@@ -1,0 +1,356 @@
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T2	      	BeginTx		        	         	       		 P
+T1	      	BeginTx		        	         	       		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T2	      	BeginTx		        	         	       		 P
+T1	      	BeginTx		        	         	       		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	CommitTx				         		        E
+
+T2	      	CommitTx				         		        E
+
+---------------------------------------------------------------
+TxId	Txtype	Operation	ObId:Obvalue:optime	LockType	Status		TxStatus
+T1	      	BeginTx		        	         	       		 P
+T2	      	BeginTx		        	         	       		 P
+T2	      	ReadTx		8:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		1:-1:277	ReadLock	Granted		 P
+T2	      	ReadTx		7:-1:235	ReadLock	Granted		 P
+T1	      	ReadTx		2:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		6:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		3:-1:277	ReadLock	Granted		 P
+T2	      	WriteTx		5:1:235	WriteLock	Granted		 P
+T1	      	ReadTx		4:-1:277	ReadLock	Granted		 P
+T2	      	CommitTx				         		        E
+
+T1	      	CommitTx				         		        E
+

@@ -1,0 +1,10 @@
+// DEADLOCK CASE
+Log deadlock.log
+BeginTx 2 W
+BeginTx 1 W
+Read    1 1
+Read    2 2
+Write   1 2
+Write   2 1
+Commit  2
+Commit  1
